@@ -16,4 +16,4 @@ mvc hyprctl $DESTDIR/usr/bin/
 mvc libwlroots.so.11032 $DESTDIR/usr/lib/
 
 cd $(dirname $0)
-lnc ./hyprland.config ~/.config/hypr/
+lnc ./hyprland.conf ~/.config/hypr/
