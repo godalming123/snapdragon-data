@@ -25,9 +25,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-SCRIPT_PATH=/home/whatever/nixDots/kiss
-
-KISS_PATH=$SCRIPT_PATH/repo/core:$SCRIPT_PATH/my-repo/customized-packages
+CURRENT_DIRECTORY=$(dirname $0)
+KISS_PATH=$CURRENT_DIRECTORY/repo/core:$CURRENT_DIRECTORY/my-repo/customized-packages
 
 log() {
     printf '%b%s %b%s%b %s\n' \
