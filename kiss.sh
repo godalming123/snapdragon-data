@@ -26,7 +26,7 @@
 # SOFTWARE.
 
 CURRENT_DIRECTORY=~/snapdragon-data/
-KISS_PATH=$CURRENT_DIRECTORY/repo/core:$CURRENT_DIRECTORY/my-repo/customized-packages:$CURRENT_DIRECTORY/repo/wayland
+KISS_PATH=$CURRENT_DIRECTORY/repo/core:$CURRENT_DIRECTORY/repo/extra:$CURRENT_DIRECTORY/repo/wayland:$CURRENT_DIRECTORY/my-repo/customized-packages
 
 log() {
     printf '%b%s %b%s%b %s\n' \
