@@ -1,10 +1,19 @@
 #!/bin/sh -e
 
-RELEASE=v0.11.0beta
+# Functions to crate parent directory and then link or move
+mvc() {
+	mkdir -p $2
+	mv $1 $2
+}
 
-mv Hyprland $DESTDIR/usr/bin/
-mv hyprctl $DESTDIR/usr/bin/
-mv wlroots.so.11032 $DESTDIR/usr/lib/
+lnc() {
+	mkdir -p $2
+	ln -sf $1 $2
+}
+
+mvc Hyprland $DESTDIR/usr/bin/
+mvc hyprctl $DESTDIR/usr/bin/
+mvc libwlroots.so.11032 $DESTDIR/usr/lib/
 
 cd $(dirname $0)
-ln -sf ./hyprland.config ~/.config/hypr/
+lnc ./hyprland.config ~/.config/hypr/
