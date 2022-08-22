@@ -2,9 +2,9 @@
 
 RELEASE=v0.11.0beta
 
-mv Hyprland /usr/bin/
-mv hyprctl /usr/bin/
-mv wlroots.so.11032 /usr/lib/
+mv Hyprland $DESTDIR/usr/bin/
+mv hyprctl $DESTDIR/usr/bin/
+mv wlroots.so.11032 $DESTDIR/usr/lib/
 
 cd $(dirname $0)
-ln -sf ../hyprland.config /home/whatever/config/hypr/
+ln -sf ./hyprland.config ~/.config/hypr/
