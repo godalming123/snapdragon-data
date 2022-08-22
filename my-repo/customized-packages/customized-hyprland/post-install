@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+echo "hyprland has been installed!"
+echo "this is a customized version with an alternate config. There is a link to the customized config in the .config/hypr/hyprland.conf"
