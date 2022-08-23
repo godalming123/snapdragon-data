@@ -1,5 +1,6 @@
 # snapdragon-data
 ```
+cd ~/
 git clone https://github.com/godalming123/snapdragon-data/
 cd snapdragon-data/
 ./kiss b customized-hyprland
