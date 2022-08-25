@@ -1,5 +1,3 @@
 #libinput
 #libxkbcommon
-#wayland
-#wayland-protocols make
-#wlroots
+#libseat
